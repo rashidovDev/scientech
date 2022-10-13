@@ -41,7 +41,7 @@ export const free : ICate[] = [
         img : require("./assets/Homepage/galochka.png")
     },
     {
-        text : "Free shipping",
+        text : "Free returns",
         img : require("./assets/Homepage/galochka.png")
     },
 ]
