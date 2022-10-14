@@ -2,12 +2,11 @@ import { ButtonStyle } from "../../utils/button/Button"
 import { free } from "../../data"
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
-import { color } from "@mui/system";
 
 const Introduction: React.FC = () => {
   return (
-    <main className="md:w-4/5 w-10/12 m-auto md:mt-20 mt-5  md:flex">
-      <div className="mt-10 text-center md:text-start lg:w-3/5 md:w-1/2">
+    <main className="md:w-4/5 w-10/12 m-auto md:mt-20 mt-5 md:flex md:justify-between">
+      <div className="mt-10 text-center md:text-start lg:w-3/5 ">
         <p className="text-[32px]  md:text-[48px] lg:text-[72px] font-[700] 
          leading-[40px] md:leading-[56px] lg:leading-[80px]">
           Get your awesome sneakers
@@ -20,7 +19,7 @@ const Introduction: React.FC = () => {
           <ButtonStyle color="home">Shop Now</ButtonStyle>
           <img src={require("../../assets/Homepage/heart.png")} alt="heart" className="ml-6" />
         </div>
-        <div className="md:flex md:items-center mt-16 ml-20">
+        <div className="md:flex md:items-center mt-16 ml-20 md:ml-0">
           {
             free.map((item, idx) => (
               <p className="flex items-center mr-16 my-5" key={idx}><img className="w-[28px] h-[28px] mr-3" src={item.img} alt={item.text}
@@ -30,8 +29,7 @@ const Introduction: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-5 lg:w-2/5 md:w-1/2">  
-
+      <div className="mt-5 lg:w-2/5">  
       <img 
       className="lg:w-[859.06px] lg:h-[566.48px] md:w-[768.01px] md:h-[506.44px] w-[434.95px] h-[286.81px]" 
       src={require("../../assets/Homepage/deskto.png")} alt="" />

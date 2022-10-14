@@ -1,5 +1,4 @@
-import Navbar from './Navbar'
-import Introduction from "./Introduction"
+import {Navbar, Introduction} from "../navigate"
 
 const Homepage = () => {
   return (

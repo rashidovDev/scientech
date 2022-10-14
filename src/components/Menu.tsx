@@ -1,9 +1,10 @@
-import { Homepage } from "./navigate"
+import { Homepage,Product } from "./navigate"
 
 const Menu = () => {
   return (
      <>
      <Homepage />
+     <Product />
      </>
   )
 }
