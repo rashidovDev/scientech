@@ -11,7 +11,7 @@ const Navbar : React.FC = () => {
   let [open, setOpen]=useState<boolean>(false);
 
   return (
-      <nav className='md:w-4/5 w-10/12 m-auto md:flex items-center pt-10 pb-4'>
+      <nav className='md:w-4/5 w-11/12 m-auto md:flex items-center pt-10 pb-4'>
         <div className="mr-12">
           <img
            className='w-[30.68px] h-[30.04px ] md:w-[40.58px] md:h-[39.73px] lg:h-[47px] lg:[48px] lg:mr-60 ' src={require("../../assets/Homepage/logo.png")} alt="logo" />

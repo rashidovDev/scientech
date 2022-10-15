@@ -1,6 +1,5 @@
 
 
-
 export interface INav {
     id : number,
     name : string,
@@ -48,7 +47,8 @@ export const free : ICate[] = [
 
 export interface IProducts {
     id : number | string,
-    ellipse : any,
+    backImage? : any,
+    ellipse? : any,
     image : any,
     title : string,
     price : string | number,
@@ -93,7 +93,7 @@ export const products : IProducts[] = [
 export interface IAcces{
     id : number | string,
     image : any,
-    heading : string,
+    heading? : string,
     title : string,
     classs : string,
 }
@@ -114,3 +114,43 @@ export const accesorries : IAcces[] = [
         classs : 'blue'
     }
 ]
+
+export const shop : IProducts[] = [
+    {
+        id : 1,
+        backImage : require("./assets/Shop/Rectangle 13.png"),
+        image : require("./assets/Shop/image 7.png"),
+        title : "Adidas Falcon Shoes for men - 2021 Edition",
+        price : 120.50,
+        rate : 3
+    },
+    {
+        id : 2,
+        backImage : require("./assets/Shop/Rectangle 14.png"),
+        image : require("./assets/Shop/image 8.png"),
+        title : "Adidas Falcon Shoes for men - 2021 Edition",
+        price : 120.50,
+        rate : 4
+    },
+    {
+        id : 3,
+        backImage : require("./assets/Shop/Rectangle 15.png"),
+        image : require("./assets/Shop/image 5.png"),
+        title : "Adidas Falcon Shoes for men - 2021 Edition",
+        price : 120.50,
+        rate : 3
+    },
+    {
+        id : 4,
+        backImage : require("./assets/Shop/Rectangle 16.png"),
+        image : require("./assets/Shop/image 1.png"),
+        title : "Adidas Falcon Shoes for men - 2021 Edition",
+        price : 120.50,
+        rate : 5
+    },
+]
+
+export interface IIcon {
+    name : string,
+    icon : any
+}

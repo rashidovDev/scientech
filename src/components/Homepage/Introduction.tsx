@@ -5,7 +5,7 @@ import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutl
 
 const Introduction: React.FC = () => {
   return (
-    <main className="md:w-4/5 w-10/12 m-auto md:mt-20 mt-5 md:flex md:justify-between">
+    <main className="md:w-4/5 w-11/12 m-auto md:mt-20 mt-5 md:flex md:justify-between">
       <div className="mt-10 text-center md:text-start lg:w-3/5 ">
         <p className="text-[32px]  md:text-[48px] lg:text-[72px] font-[700] 
          leading-[40px] md:leading-[56px] lg:leading-[80px]">

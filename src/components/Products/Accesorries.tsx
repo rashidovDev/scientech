@@ -28,20 +28,20 @@ const Accesorries : FC = () => {
                 '>{access.heading}</h1>
                 <p className='lg:text-[16px] lg:leading-[24px] font-[500]
                 md:text-[14px] md:leading-[17px] my-7 text-[16px] leading-[24px]
-                text-[#FFFFFF] lg:w-4/5 md:w-[200px] w-4/5 m-auto md:ml-1
+                text-[#FFFFFF] lg:w-4/5 md:w-[200px] w-4/5 m-auto md:ml-0
                 '
                 >{access.title}</p>
-                <div className='flex justify-center my-5 md:justify-start'>
+                <div className='flex justify-center mt-5 mb-20 md:justify-start'>
                 <ButtonStyle color={access.classs}>Shop Now</ButtonStyle>
                 </div>
               </div>
               <img className={`lg:h-[125.55px] lg:w-[120px] lg:mt-[200px] 
-              md:mt-[200px] md:mr-[170px] w-[81.25px] md:ml-[0] h-[85.01px] ${access.classs === "green" ? `-mt-[350px]` : `-mt-[290px]`} ml-[170px]
+              md:mt-[200px] md:mr-[170px] w-[81.25px] md:ml-[0] h-[85.01px] ${access.classs === "green" ? `-mt-[430px]` : `-mt-[380px]`} ml-[170px]
               md:w-[85.26px] md:h-[89.2px] lg:mr-[250px] absolute z-10 opacity-90 `}
               src={require("../../assets/Accesorries/Group.png")} alt="group" />
                <img className='lg:w-[104px] lg:h-[70px] absolute top-0  left-0'
             src={require(`../../assets/Accesorries/${access.classs === "green" ? `Ellipse 14.png` : `Ellipse 16.png`}`)} alt="ellipse" />
-              <img className='lg:bottom-12 lg:right-[220px] md:bottom-5 md:right-[100px] absolute '
+              <img className='lg:bottom-12 lg:right-[220px] md:bottom-5 md:right-[100px] bottom-[330px] right-12 absolute '
             src={require(`../../assets/Accesorries/${access.classs === "green" ? `Ellipse 11.png` : `Ellipse 15.png`}`)} alt="ellipse" />
             </div>
       </div>

@@ -27,3 +27,11 @@ box-shadow: 9px 11px 71px 12px rgba(247, 128, 165, 0.31);
 .blue{
     background-color:#02BE83;
 }
+.bestSeller{
+    background-color: #315BFF;
+}
+.imgg{
+    transform: matrix(-0.62, -0.79, -0.79, 0.62,0,0);
+}
+
+

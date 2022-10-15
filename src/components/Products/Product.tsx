@@ -5,7 +5,7 @@ const Product : FC = () => {
   return (
     <>
     <FeaturedProducts/>
-    <Accesorries/>
+    <Accesorries/> 
     <BestSeller/>
     <NewArrivals/>
     <Shop/>

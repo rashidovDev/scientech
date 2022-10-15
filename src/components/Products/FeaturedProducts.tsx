@@ -4,7 +4,7 @@ import { products } from "../../data";
 
 const FeaturedProducts : FC = () => {
   return (
-    <div className='md:w-4/5 w-10/12 m-auto mt-16 mb-8'>
+    <div className='md:w-4/5 w-11/12 m-auto mt-16 mb-8'>
       <div className="md:flex md:justify-between items-center">
         <p className='text-[#0A083A] md:text-[48px] text-[32px] font-[700]'>Featured Products</p>
         <p className="text-[14px] md:text-[18px] lg:text-[20px] cursor-pointer text-[#FF3C78] hidden md:inline"><span className="mr-4 ">View all</span><span><ArrowForwardIosIcon sx={{fontSize:"18px"}}/></span></p>
