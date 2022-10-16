@@ -31,13 +31,17 @@ const Introduction: React.FC = () => {
 
       <div className="mt-5 lg:w-2/5">  
       <img 
-      className="lg:w-[859.06px] lg:h-[566.48px] md:w-[768.01px] md:h-[506.44px] w-[434.95px] h-[286.81px]" 
+      className="lg:w-[859.06px] lg:h-[566.48px] md:w-[768.01px] b md:h-[506.44px] w-[434.95px] h-[286.81px]" 
       src={require("../../assets/Homepage/deskto.png")} alt="" />
       <div className="flex justify-center mt-3">
-        <ArrowCircleLeftOutlinedIcon sx={{ fontSize : "33.33px", color : "#315BFF",marginRight : "10px" }}/>
+        <ArrowCircleLeftOutlinedIcon sx={{ fontSize : "33.33px", color : "#999",marginRight : "10px" }}/>
         <ArrowCircleRightOutlinedIcon sx={{ fontSize : "33.33px", color : "#315BFF" }}/>
       </div>
-      {/* <div>
+
+
+      {/*Unfotunately i didn't solve size of sneaker image where is on the right part of page 
+      
+      <div>
         <img className=" lg:w-[350px] lg:h-[394px] md:w-[388px] md:h-[389px] "  
         src={require("../../assets/Homepage/group/gradient.png")} alt="sneaker" />
         </div>

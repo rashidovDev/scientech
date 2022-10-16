@@ -1,4 +1,4 @@
-import {FeaturedProducts, Accesorries,BestSeller,NewArrivals,Shop,Categories,Brands} from "../navigate"
+import {FeaturedProducts, Accesorries,BestSeller,NewArrivals,Shop,Categories,Brands,Footer} from "../navigate"
 import {FC} from "react"
 
 const Product : FC = () => {
@@ -11,6 +11,7 @@ const Product : FC = () => {
     <Shop/>
     <Categories/>
     <Brands/>
+
     </>
   )
 }

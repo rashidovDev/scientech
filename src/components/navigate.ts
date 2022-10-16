@@ -9,5 +9,8 @@ export {default as Categories} from "./Products/Categories"
 export {default as NewArrivals} from "./Products/NewArrivals"
 export {default as Product} from "./Products/Product"
 export {default as Shop} from "./Products/Shop"
+export {default as Subscribe} from "./Products/Subscribe"
+export {default as Footer} from "./Footer/Footer"
+export {default as BackToTopButton} from "./BackTop/BackToTopButton"
 
 

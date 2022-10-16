@@ -1,10 +1,13 @@
-import { Homepage,Product } from "./navigate"
+import { Homepage,Product,Footer,BackToTopButton } from "./navigate"
+import React from "react"
 
-const Menu = () => {
+const Menu : React.FC = () => {
   return (
      <>
      <Homepage />
      <Product />
+     <BackToTopButton/>
+     <Footer/>
      </>
   )
 }

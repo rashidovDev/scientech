@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Switch from '@mui/material/Switch';
 import { ButtonStyle } from "../../utils/button/Button";
 import BestIcon from "./BestIcon";
@@ -6,6 +6,13 @@ import BestIcon from "./BestIcon";
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 const BestSeller : React.FC = () => {
+  
+  const [isMan, setIsMan] = useState<boolean>(false)
+
+  const toggle = () => {
+    setIsMan(!isMan)
+  }
+
   return (
     <div>
       <div className="md:w-4/5 w-10/12 m-auto md:flex md:justify-between items-center mt-32">
@@ -15,7 +22,9 @@ const BestSeller : React.FC = () => {
         >Best seller this week</p>
         <p className="text-center">
           <span className="md:font-[500] md:text-[18px] md:leading-[32px]">Men</span>
-          <span> <Switch {...label} /></span>
+          <span> <Switch {...label}
+          onChange={toggle}
+          /></span>
           <span className="md:font-[500] md:text-[18px] md:leading-[32px]">Women</span>
         </p>
       </div>
@@ -31,7 +40,7 @@ const BestSeller : React.FC = () => {
           className="lg:w-[929px] lg:h-[572.78px] lg:-mt-[450px] lg:-ml-[0]
           md:w-[672.2px] md:h-[415.56px] md:-mt-[300px] -mt-[180px] -ml-[20px]
            "
-          src={require("../../assets/BestSeller/image 6.png")} alt="sneaker" />
+          src={require(`../../assets/BestSeller/${!isMan ? `image 6.png` : `image 3.png`}`)} alt="sneaker" />
           <img  className="md:w-[234px] md:h-[76px] absolute 
           lg:bottom-[290px] lg:right-[200px]
           md:bottom-[200px] md:right-[100px]

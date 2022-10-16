@@ -2,6 +2,7 @@ import DriveEtaIcon from '@mui/icons-material/DriveEta';
 import HeadsetIcon from '@mui/icons-material/Headset';
 import PaymentIcon from '@mui/icons-material/Payment';
 import ControlCameraIcon from '@mui/icons-material/ControlCamera';
+import { prod } from '../../data';
 
 const Categories : React.FC = () => {
 
@@ -47,16 +48,31 @@ const Categories : React.FC = () => {
          </div>
        </div>
 
-       <div className='lg:w-4/5 m-auto my-10'>
+       <div className='lg:w-4/5 w-full m-auto my-10'>
         <p className='md:text-[48px] font-[700] 
          text-[32px] md:text-center px-10 md:px-[0] md:w-[510px] w-[177px] md:m-auto leading-[40px] md:my-10 my-8'>Choose categories</p>
        <p className='md:w-[639px] md:m-auto w-[311px] m-auto md:leading-[32px] md:text-center'>For explosive events (sprints up to 400 metres, long jump, triple jump)
         the reduction in atmospheric pressure means there is less resistance from the atmosphere.
         </p> 
        </div>
-
-    </div>
+        
+        <div className='lg:w-4/5 m-auto grid md:grid-cols-3  gap-12'>
+          {prod.map((prod,idx) => (
+       <div key={idx + 1} className='lg:w-[358px] lg:h-[382px]
+       md:w-[258px] md:h-[382px] h-[340px] relative 
+       rounded-[16px] bg-[#F5F5F5] pt-10 px-5 m-5'>
+        <p className={`md:text-[32px] text-[24px] md:leading-[40px] md:w-[192px]
+        font-[700] text-[${prod.color}] pb-5`}>{prod.heading}</p>
+        <p className='leading-[32px] text-[18px] text-[#6C6B6B] py-5 '>{prod.count}</p>
+        <p className={`text-[20px] leading-[32px] text-[${prod.color}] `}>See collection</p>
+        <img className='absolute top-12 right-5 md:w-[70px] w-[50px]'
+        src={prod.ellipse} alt="ellipse" />
+        <img className='-mt-[20px] h-[280px]'
+        src={prod.image} alt="" />
+       </div>
+          ))}
+          </div>
+        </div>
   )
 }
-
 export default Categories

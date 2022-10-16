@@ -2,6 +2,7 @@
 
 
 *{
+    /* background-color: #999; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +12,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 /* HomePage */
@@ -34,4 +36,13 @@ box-shadow: 9px 11px 71px 12px rgba(247, 128, 165, 0.31);
     transform: matrix(-0.62, -0.79, -0.79, 0.62,0,0);
 }
 
+.backk{
+    background: linear-gradient(97.49deg, #8AA8F8 -0.43%, #315BFF 144.53%);
+    mix-blend-mode: normal;
+}
+
+.bord{
+    border-bottom: 1px solid rgb(211, 210, 210);
+    border-top: 1px solid rgb(211, 210, 210);
+}
 
